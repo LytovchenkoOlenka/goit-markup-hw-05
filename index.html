@@ -14,12 +14,12 @@
     <header class="header">
       <div class="container header-container">
         <nav class="header-container">
-          <a class="logo link" href="./index.html"
+          <a class="logo" href="./index.html"
             >Web<span class="logo-studio">Studio</span></a
           >
           <ul class="nav-links list">
             <li class="nav-item" >
-              <a class="link-focus link" href="./index.html">Studio</a>
+              <a class="link-focus link current" href="./index.html">Studio</a>
             </li>
             <li class="nav-item">
               <a class="link-focus link" href="./portfolio.html">Portfolio</a>
@@ -45,7 +45,7 @@
       <section class="hero">
         <!-- <div class="container"> -->
           <h1 class="hero-title">Effective Solutions <br>for Your Business</h1>
-          <button type="button" class="hero-button button">Order Service</button>
+          <button type="button" class="hero-button button" data-modal-open >Order Service</button>
         <!-- </div> -->
       </section>
       <section class="advantages">
@@ -385,7 +385,7 @@
     <footer class="footer">
       <div class="container footer-container">
         <div class="footer-logo-container">
-          <a class="logo link footer-item" href="./index.html"
+          <a class="logo footer-item" href="./index.html"
             >Web<span class="footer-logo-studio">Studio</span></a
           >
           <p class="slogan-footer body-text footer-item">
@@ -433,5 +433,17 @@
         </div>
       </div>
     </footer>
+
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button class="close-modal-button button" type="button" data-modal-close>
+            <svg class="close-button-icon">
+              <use href="./images/icons.svg#close-icon"></use>
+            </svg>
+          </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
+
   </body>
 </html>
